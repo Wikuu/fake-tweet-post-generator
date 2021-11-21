@@ -1,0 +1,42 @@
+.Offers {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  color: #313131;
+}
+
+.Offers h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Offer {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.Offer span {
+  background-color: #313131;
+  color: #fff;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Offers {
+    width: 80%;
+  }
+  .Offers h5 {
+    font-size: 20px;
+  }
+
+  .Offer {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Offers {
+    width: 90%;
+  }
+}

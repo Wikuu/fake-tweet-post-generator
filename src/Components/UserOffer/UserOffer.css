@@ -1,0 +1,26 @@
+.UserOffer {
+  width: 100%;
+  margin: 20px auto 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  color: #313131;
+  font-size: 22px;
+  font-weight: 500;
+}
+.UserOffer span {
+  background-color: #313131;
+  color: #fff;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .UserOffer {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .UserOffer {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,83 @@
+.SellPost {
+  width: 60%;
+  height: auto;
+  margin: 20px auto 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  color: #313131;
+}
+
+.SellPost h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.SellPost h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #919699;
+}
+
+.SellPost h4 span {
+  color: #313131;
+}
+
+.SellPost .PriceOffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.SellPost .PriceOffer input:first-child {
+  width: 70%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #313131;
+  border-radius: 5px;
+}
+
+.SellPost .PriceOffer input:last-child {
+  width: 25%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #313131;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.SellPost .PriceOffer input:last-child:hover {
+  background-color: #313131;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .SellPost {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .SellPost {
+    width: 90%;
+  }
+  .SellPost h5 {
+    font-size: 20px;
+  }
+
+  .SellPost .PriceOffer {
+    flex-direction: column;
+  }
+
+  .SellPost .PriceOffer input:first-child {
+    width: 100%;
+  }
+
+  .SellPost .PriceOffer input:last-child {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

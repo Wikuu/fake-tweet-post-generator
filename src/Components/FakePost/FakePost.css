@@ -1,0 +1,150 @@
+.FakePost {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.FakePost .FakePostTop {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.FakePost .FakePostTop .User {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.FakePost .FakePostTop .User img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.FakePost .FakePostTop .User .UserInformation {
+  margin-left: 15px;
+}
+
+.FakePost .FakePostTop .User .UserInformation .UserName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.FakePost .FakePostTop .User .UserInformation .UserName h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #313131;
+}
+
+.FakePost .FakePostTop .User .UserInformation .UserName .CertifiedIcon {
+  margin-left: 5px;
+  color: #1ca0f2;
+}
+
+.FakePost .FakePostTop .User .UserInformation p {
+  font-size: 16px;
+  color: #919699;
+}
+
+.FakePost .FakePostTop .TwitterIcon {
+  font-size: 26px;
+  color: #1ca0f2;
+  width: 30%;
+  text-align: end;
+}
+
+.FakePost .FakePostBody {
+  margin-top: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.FakePost .FakePostBody .Post {
+  font-size: 23px;
+  font-weight: 500;
+  color: #313131;
+}
+
+.FakePost .FakePostBody .PostDateInformation {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #919699;
+}
+
+.FakePost .FakePostBody .PostDateInformation span {
+  position: relative;
+  margin-right: 10px;
+}
+
+.FakePost .FakePostBody .PostDateInformation span::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #919699;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  margin-top: calc(25%);
+  margin-left: calc(13%);
+}
+
+.FakePost .FakePostFoot {
+  display: flex;
+  margin-top: 12px;
+}
+
+.FakePost .FakePostFoot .PostActionCounts {
+  display: flex;
+  align-items: center;
+}
+
+.FakePost .FakePostFoot .PostActionCounts a {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #919699;
+  transition: 0.5s;
+}
+
+.FakePost .FakePostFoot .PostActionCounts p {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #919699;
+}
+
+.FakePost .FakePostFoot .PostActionCounts:last-child {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .FakePost {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .FakePost {
+    width: 90%;
+  }
+  .FakePost .FakePostBody .Post {
+    font-size: 20px;
+  }
+  .FakePost .FakePostBody .PostDateInformation {
+    font-size: 16px;
+  }
+
+  .FakePost .FakePostFoot .PostActionCounts a {
+    font-size: 20px;
+  }
+  .FakePost .FakePostFoot .PostActionCounts p {
+    font-size: 15px;
+  }
+}

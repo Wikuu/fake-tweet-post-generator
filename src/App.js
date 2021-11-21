@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { FakePost } from "./Components/FakePost/FakePost";
+import { SellPost } from "./Components/SellPost/SellPost";
+import { Offers } from "./Components/Offers/Offers";
+import { PostSettings } from "./Components/PostSettings/PostSettings";
+import { PostProvider } from "./Contexts/PostContext";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Content">
+      <PostProvider>
+        <div class="LeftSide">
+          <PostSettings />
+        </div>
+        <div className="RightSide">
+          <FakePost />
+          <SellPost />
+          <Offers />
+        </div>
+      </PostProvider>
     </div>
   );
 }
